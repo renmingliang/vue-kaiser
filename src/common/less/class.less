@@ -1,0 +1,59 @@
+@import './variable.less';
+
+// 字体icon
+[class*=icon-]{
+  display: inline-block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+// 处理某些机型下分辨率,出现白线情况
+.mt-1{
+  margin-top: -1px;
+}
+
+// fixed固定定位
+.fixed{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+// 通用class
+.float-l{
+  float: left;
+}
+.float-r{
+  float: right;
+}
+.clearfix:after, .clearfix:before{
+  content: '';
+  clear: both;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix{
+  zoom: 1;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.text-justify{
+  text-align: justify;
+}
+.color-event{
+  color: @color-dev-event;
+}
