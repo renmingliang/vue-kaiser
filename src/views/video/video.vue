@@ -15,6 +15,7 @@ export default {
   created() {
   },
   mounted() {
+    /* eslint-disable no-undef */
     /* eslint-disable no-new */
     new TcPlayer('videoContainer', {
       'm3u8': this.url, // 请替换成实际可用的播放地址
